@@ -87,8 +87,11 @@ def download_files(trade_date: datetime.date, file_link: str) -> None:
 
 
 if __name__ == "__main__":
+    start_time = datetime.datetime.now()
     all_files = get_trading_all_dates_and_files()
     for trade_date, link in all_files:
         download_files(trade_date, link)
         spimex_trading_results = get_data(trade_date)
         save_data_to_db(spimex_trading_results)
+    end_time = datetime.datetime.now()
+    print(f'Программа отработала за {end_time-start_time}')
