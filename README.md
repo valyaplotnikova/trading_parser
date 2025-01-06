@@ -33,8 +33,8 @@
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/yourusername/spimex_parser.git
-   cd spimex_parser
+   git clone https://github.com/valyaplotnikova/trading_parser.git
+   cd trading_parser
    ```
 2. Создайте виртуальное окружение и активируйте его:
 ```bash
