@@ -87,6 +87,7 @@ def download_files(trade_date: datetime.date, file_link: str) -> None:
 
 
 if __name__ == "__main__":
+
     start_time = datetime.datetime.now()
     all_files = get_trading_all_dates_and_files()
     for trade_date, link in all_files:
